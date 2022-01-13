@@ -1,0 +1,29 @@
+import java.util.Scanner;
+import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.lang.StringBuffer;
+class CountNumOfVowels {
+    public static void main(String[] args) {
+     System.out.println("Enter some string");
+     Scanner sc = new Scanner(System.in);
+     String str = sc.nextLine();
+    char[] ch =  str.toCharArray();
+    int count=0;
+    for(char c : ch){
+        switch(c){
+            case 'a':
+                case 'e':
+                    case 'i':
+                        case 'o':
+                            case 'u':
+                                count++;
+                                break;
+        }
+    }
+         System.out.println(count);
+
+    }
+}

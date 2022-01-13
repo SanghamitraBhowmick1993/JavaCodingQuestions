@@ -1,0 +1,29 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class MatrixDemo {
+    public static void main(String[] args) {
+      Scanner sc = new Scanner(System.in);
+      int rows, col;
+      System.out.println("Please enter the no of rows in matrix");
+      rows = sc.nextInt();
+      System.out.println("Please enter the no of column in matrix");
+      col = sc.nextInt();
+      
+      int matrix[][] = new int[rows][col];
+      System.out.println("Please enter the elements of the matrix");
+      for(int i =0; i<rows;i++){
+          for(int j =0; j<col;j++){
+              matrix[i][j] = sc.nextInt();
+          }
+      }
+       System.out.println("Displaying the elements of the matrix");
+      for(int i =0;i<rows;i++){
+          for(int j =0;j<col;j++)
+               System.out.print(matrix[i][j] + " ");
+               System.out.println();
+          
+       
+      }
+    }
+}

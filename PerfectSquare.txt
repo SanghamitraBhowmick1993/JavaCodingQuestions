@@ -1,0 +1,12 @@
+class PerfectSquare {
+    public static void main(String[] args) {
+        int num=4;
+        for(int i =1; i<num;i++){
+            if(i*i==num){
+        System.out.println("Perf num and is square of : " + i);
+        return;
+            }
+            
+        }
+    }
+}

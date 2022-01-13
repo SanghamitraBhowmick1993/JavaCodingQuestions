@@ -1,0 +1,17 @@
+import java.util.*;
+import java.util.Scanner;
+class FactorsOfNumber {
+    public static void main(String[] args) {
+      int num = 10;
+      //int fact = 1;
+      for(int i =1;i<=num;i++){
+          System.out.println("Factors of num " + i + " are");
+         for(int j = 1; j<=i;j++){
+             if(i%j==0){
+                 System.out.println("" + j);
+             }
+         }
+      }
+     
+    }
+}

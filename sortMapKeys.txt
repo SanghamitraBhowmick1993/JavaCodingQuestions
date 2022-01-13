@@ -1,0 +1,23 @@
+import java.util.*;
+import java.util.Scanner;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.Map.Entry;
+class SortMap {
+    public static void main(String[] args) {
+ Map<String,String> unsortedMap = new HashMap<>();
+     unsortedMap.put("banana", "banana");
+      unsortedMap.put("apple", "apple");
+       unsortedMap.put("cherry", "cherry");
+    
+    for(Map.Entry<String,String> entry : unsortedMap.entrySet()){
+        System.out.println("unsorted key " + entry.getKey());
+    }
+ Map<String,String> treeMap = new TreeMap<>(unsortedMap);
+  for(Map.Entry<String,String> entry : treeMap.entrySet()){
+        System.out.println("sorted key " + entry.getKey());
+    }
+     
+    }
+}

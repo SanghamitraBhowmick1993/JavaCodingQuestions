@@ -1,0 +1,30 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+class DupChars {
+    public static void main(String[] args) {
+      String str = "seleniums";
+     char ch[] = str.toCharArray();
+     HashMap<Character,Integer> map =  new HashMap<>();
+     for(Character c : ch){
+         if(map.containsKey(c)){
+             map.put(c,map.get(c)+1);
+         }
+         else{
+             map.put(c,1);
+         }
+     }
+     //Iterating
+    Set<Entry<Character,Integer>> setMap =  map.entrySet();
+    for(Entry<Character,Integer> se : setMap){
+        if(se.getValue()>1){
+            System.out.println("Dup char is " + se.getKey() + ":" + se.getValue());
+        }
+    }
+    }
+}

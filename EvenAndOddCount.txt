@@ -1,0 +1,21 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class EvenOddDigits {
+    public static void main(String[] args) {
+      int num = 2357; //odd=3, even=1
+      int oddCount = 0;
+      int evenCount=0;
+      while(num!=0){
+        int rem = num%10;
+        if(rem%2==0)
+            evenCount++;
+        else
+           oddCount++; 
+           
+        num = num/10;
+      }
+      System.out.println("Even count is = " + evenCount 
+      + " :: " +  "Odd count is = " + oddCount);
+    }
+}

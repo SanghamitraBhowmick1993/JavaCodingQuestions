@@ -1,0 +1,20 @@
+public class ElementsInEvenPosition {
+    public static void main(String[] args) {
+        //int ar[] = {1,20,33};
+        int num1 = 20;
+        int num2 = 30;
+        int num3 = 10;
+        
+       if((num1 > num2) && (num1 > num3)){
+           System.out.println("Greatest is : " + num1);
+       } 
+       else if((num2 > num1) && (num2 > num3)){
+         System.out.println("Greatest is : " + num2);
+
+       }
+       else{
+        System.out.println("Greatest is : " + num3);
+
+       }
+    }
+}

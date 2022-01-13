@@ -1,0 +1,16 @@
+public class ReverseArray {
+    public static void main(String[] args) {
+        int ar[] ={10,20,30,40};
+        int low = 0; int high = ar.length-1;
+        while(low<high){
+            int temp = ar[low];
+            ar[low] = ar[high];
+            ar[high] = temp;
+            low++;
+            high--;
+        }
+        for(int i : ar){
+            System.out.println(i);
+        }    
+    }
+}
