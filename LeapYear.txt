@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+import java.lang.StringBuffer;
+class LeapYear {
+    public static void main(String[] args) {
+        System.out.println("Enter the year");
+        Scanner sc = new Scanner(System.in);
+       int year =  sc.nextInt();
+       if((year%4) ==0){
+         System.out.println("Given year is leap year");  
+       }
+       else{
+           System.out.println("Not a leap year");
+       } 
+    }
+}
