@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+import java.util.*;
+
+class StringRotationOfEachOther {
+    public static void main(String[] args) {
+    //abcd :: bcda cdab dabc -- bacd(not rotation)
+    String str = "abcd";
+    System.out.println(isRotatedString("abcd","bcda"));
+     
+}
+public static boolean isRotatedString(String str, String org){
+    if(str == null || org==null){
+        return false;
+    }
+    else if(str.length()!= org.length()){
+        return false;
+    }
+    else{
+        String concatd = str + str;
+        return concatd.contains(org);
+    }
+}
+}

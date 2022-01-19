@@ -1,0 +1,24 @@
+
+import java.util.Scanner;
+import java.util.*;
+
+class DescendingOrderOfOccurance {
+    public static void main(String[] args) {
+     String str = "Banana";
+     HashMap<Character,Integer> map = new HashMap<>();
+     for(int i=0;i<str.length();i++){
+         char ch = str.charAt(i);
+         if(map.containsKey(c)){
+             map.put(c,map.get(c)+1);
+         }
+         else{
+             map.put(c,1);
+         }
+     }
+     //sort the entry
+Set<Entry<Character,Integer> entry = map.entrySet();
+List<Entry<Character,Integer>> l1 = new ArrayList<>(entry);
+Collections.sort(l1,new Comparator<Map<Character,Integer>.Entry<Character,Integer>>())
+     
+}
+}
